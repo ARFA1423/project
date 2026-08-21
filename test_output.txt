@@ -1,0 +1,86 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\User\OneDrive\Documents\project\expentia
+plugins: anyio-4.12.1
+collected 6 items
+
+tests\test_api.py ..FFFF                                                 [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_create_account _____________________________
+
+client = <starlette.testclient.TestClient object at 0x00000212D12AD520>
+
+>   ???
+E   assert 401 == 200
+E    +  where 401 = <Response [401 Unauthorized]>.status_code
+
+C:\Users\Tejas N Reddy\OneDrive\Pictures\MCA\3rd Sem Projects\Project 3\expentia\tests\test_api.py:47: AssertionError
+____________________________ test_create_category _____________________________
+
+client = <starlette.testclient.TestClient object at 0x00000212D12AD520>
+
+>   ???
+E   assert 401 == 200
+E    +  where 401 = <Response [401 Unauthorized]>.status_code
+
+C:\Users\Tejas N Reddy\OneDrive\Pictures\MCA\3rd Sem Projects\Project 3\expentia\tests\test_api.py:57: AssertionError
+___________________________ test_create_transaction ___________________________
+
+client = <starlette.testclient.TestClient object at 0x00000212D12AD520>
+
+>   ???
+E   KeyError: 0
+
+C:\Users\Tejas N Reddy\OneDrive\Pictures\MCA\3rd Sem Projects\Project 3\expentia\tests\test_api.py:65: KeyError
+___________________________ test_statistics_summary ___________________________
+
+client = <starlette.testclient.TestClient object at 0x00000212D12AD520>
+
+>   ???
+E   assert 401 == 200
+E    +  where 401 = <Response [401 Unauthorized]>.status_code
+
+C:\Users\Tejas N Reddy\OneDrive\Pictures\MCA\3rd Sem Projects\Project 3\expentia\tests\test_api.py:86: AssertionError
+============================== warnings summary ===============================
+app\schemas.py:10
+  C:\Users\User\OneDrive\Documents\project\expentia\app\schemas.py:10: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class UserResponse(BaseModel):
+
+app\schemas.py:27
+  C:\Users\User\OneDrive\Documents\project\expentia\app\schemas.py:27: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class AccountResponse(AccountCreate):
+
+app\schemas.py:38
+  C:\Users\User\OneDrive\Documents\project\expentia\app\schemas.py:38: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class CategoryResponse(CategoryCreate):
+
+app\schemas.py:47
+  C:\Users\User\OneDrive\Documents\project\expentia\app\schemas.py:47: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class TagResponse(TagCreate):
+
+app\schemas.py:63
+  C:\Users\User\OneDrive\Documents\project\expentia\app\schemas.py:63: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    class TransactionResponse(TransactionCreate):
+
+tests/test_api.py::test_user_login
+tests/test_api.py::test_create_account
+tests/test_api.py::test_create_category
+tests/test_api.py::test_create_transaction
+tests/test_api.py::test_statistics_summary
+  C:\Users\User\OneDrive\Documents\project\expentia\app\auth.py:25: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+
+tests/test_api.py::test_user_login
+  C:\Users\User\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py:170: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_api.py::test_user_login returned <class 'str'>.
+  Did you mean to use `assert` instead of `return`?
+  See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_api.py::test_create_account - assert 401 == 200
+FAILED tests/test_api.py::test_create_category - assert 401 == 200
+FAILED tests/test_api.py::test_create_transaction - KeyError: 0
+FAILED tests/test_api.py::test_statistics_summary - assert 401 == 200
+================== 4 failed, 2 passed, 11 warnings in 1.09s ===================

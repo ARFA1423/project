@@ -1,0 +1,85 @@
+Folder PATH listing for volume OS
+Volume serial number is B4E3-FEB4
+C:.
+│   docker-compose.yml
+│   expentia.db
+│   requirements.txt
+│   run.py
+│   structure.txt
+│   test_output.txt
+│   
+├───.pytest_cache
+│   │   .gitignore
+│   │   CACHEDIR.TAG
+│   │   README.md
+│   │   
+│   └───v
+│       └───cache
+│               lastfailed
+│               nodeids
+│               
+├───app
+│   │   auth.py
+│   │   database.py
+│   │   dependencies.py
+│   │   main.py
+│   │   models.py
+│   │   schemas.py
+│   │   
+│   ├───routers
+│   │   │   accounts.py
+│   │   │   categories.py
+│   │   │   statistics.py
+│   │   │   tags.py
+│   │   │   transactions.py
+│   │   │   users.py
+│   │   │   
+│   │   └───__pycache__
+│   │           accounts.cpython-312.pyc
+│   │           categories.cpython-312.pyc
+│   │           statistics.cpython-312.pyc
+│   │           tags.cpython-312.pyc
+│   │           transactions.cpython-312.pyc
+│   │           users.cpython-312.pyc
+│   │           
+│   ├───static
+│   │   ├───css
+│   │   │       dashboard.css
+│   │   │       login.css
+│   │   │       style.css
+│   │   │       
+│   │   └───js
+│   │           chart.js
+│   │           
+│   ├───templates
+│   │       about.html
+│   │       accounts.html
+│   │       base.html
+│   │       categories.html
+│   │       dashboard.html
+│   │       exchange.html
+│   │       forgot_password.html
+│   │       insights.html
+│   │       login.html
+│   │       register.html
+│   │       reset_password.html
+│   │       statistics.html
+│   │       tags.html
+│   │       transactions.html
+│   │       
+│   └───__pycache__
+│           auth.cpython-312.pyc
+│           database.cpython-312.pyc
+│           dependencies.cpython-312.pyc
+│           main.cpython-312.pyc
+│           models.cpython-312.pyc
+│           routes.cpython-312.pyc
+│           schemas.cpython-312.pyc
+│           
+├───frontend
+└───tests
+    │   test_api.py
+    │   
+    └───__pycache__
+            test_api.cpython-312-pytest-9.0.2.pyc
+            
